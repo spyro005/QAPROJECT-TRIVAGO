@@ -1,0 +1,231 @@
+2025-03-10 01:13:03.535 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:13:03.537 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:13:03.537 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:13:55.463 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:13:55.465 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:13:55.465 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:15:40.037 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:15:40.040 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:15:40.040 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:30:31.914 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:30:31.917 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:30:31.917 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:31:23.852 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:31:23.854 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:31:23.854 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:38:00.405 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:38:00.407 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:38:00.407 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:39:27.284 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:39:27.286 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:39:27.286 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:42:18.896 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:42:18.898 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:42:18.899 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:43:31.236 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:43:31.239 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:43:31.239 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:45:47.323 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:45:47.325 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:45:47.325 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:46:06.420 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:46:06.422 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:46:06.422 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:50:52.547 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:50:52.550 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:50:52.550 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:51:44.965 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:51:44.967 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:51:44.967 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-10 01:53:03.970 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-10 01:53:03.974 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-10 01:53:03.974 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-15 17:51:25.663 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-15 17:51:25.665 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-15 17:51:25.665 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-15 17:52:13.696 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-15 17:52:13.699 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-15 17:52:13.699 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-03-15 17:52:39.082 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-03-15 17:52:39.084 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-03-15 17:52:39.084 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-04-09 21:17:31.837 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-04-09 21:17:31.839 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-04-09 21:17:31.839 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:28:22.265 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:28:22.267 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:28:22.268 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:29:00.128 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:29:00.131 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:29:00.131 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:37:17.368 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:37:17.370 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:37:17.370 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:49:43.091 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:49:43.095 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:49:43.095 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:50:24.974 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:50:24.977 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:50:24.977 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-19 23:53:45.810 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-19 23:53:45.813 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-19 23:53:45.813 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:02:06.116 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:02:06.119 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:02:06.119 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:02:39.249 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:02:39.251 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:02:39.251 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:03:39.992 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:03:39.995 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:03:39.995 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:07:28.542 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:07:28.545 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:07:28.545 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:07:56.262 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:07:56.264 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:07:56.264 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:09:26.512 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:09:26.515 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:09:26.515 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:10:56.001 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:10:56.003 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:10:56.003 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:12:20.554 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:12:20.557 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:12:20.557 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:13:15.369 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:13:15.371 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:13:15.372 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:13:41.910 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:13:41.913 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:13:41.913 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:16:56.487 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:16:56.490 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:16:56.490 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:19:22.733 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:19:22.735 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:19:22.736 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:21:44.087 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:21:44.089 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:21:44.089 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 00:24:01.120 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 00:24:01.123 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 00:24:01.123 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:26:20.200 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:26:20.202 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:26:20.202 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:36:54.626 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:36:54.630 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:36:54.630 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:39:23.798 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:39:23.801 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:39:23.801 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:48:51.951 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:48:51.953 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:48:51.953 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:49:19.276 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:49:19.278 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:49:19.278 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 05:52:54.516 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 05:52:54.518 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 05:52:54.518 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 10:48:25.244 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 10:48:25.247 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 10:48:25.247 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 16:29:41.361 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 16:29:41.363 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 16:29:41.364 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 16:33:03.228 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 16:33:03.230 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 16:33:03.230 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 16:35:03.861 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 16:35:03.863 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 16:35:03.864 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 16:44:23.336 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 16:44:23.339 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 16:44:23.339 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 16:45:50.062 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 16:45:50.065 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 16:45:50.065 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:00:52.529 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:00:52.533 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:00:52.533 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:04:22.528 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:04:22.530 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:04:22.531 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:05:30.193 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:05:30.196 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:05:30.196 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:11:59.781 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:11:59.784 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:11:59.784 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:13:49.464 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:13:49.467 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:13:49.467 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:16:13.910 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:16:13.912 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:16:13.912 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:18:27.302 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:18:27.304 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:18:27.305 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:20:00.284 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:20:00.287 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:20:00.287 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:22:20.580 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:22:20.583 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:22:20.583 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:29:18.832 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:29:18.835 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:29:18.835 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 17:34:04.059 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 17:34:04.062 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 17:34:04.062 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 19:16:47.326 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 19:16:47.329 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 19:16:47.329 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 20:57:33.695 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 20:57:33.698 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 20:57:33.698 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 21:15:03.589 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 21:15:03.592 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 21:15:03.592 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 21:19:42.091 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 21:19:42.093 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 21:19:42.094 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 21:24:16.513 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-20 21:24:16.515 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 21:24:16.515 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 21:40:22.537 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-20 21:40:22.540 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 21:40:22.540 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 23:06:47.837 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-20 23:06:47.840 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 23:06:47.840 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-20 23:43:36.577 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-20 23:43:36.580 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-20 23:43:36.580 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:16:57.497 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:16:57.500 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:16:57.500 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:31:42.241 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:31:42.243 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:31:42.243 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:34:36.908 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:34:36.911 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:34:36.911 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:37:02.306 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:37:02.309 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:37:02.309 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:43:39.553 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:43:39.555 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:43:39.555 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:46:03.184 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:46:03.187 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:46:03.187 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:48:40.881 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:48:40.884 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:48:40.884 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-21 00:50:35.716 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-21 00:50:35.719 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-21 00:50:35.719 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 

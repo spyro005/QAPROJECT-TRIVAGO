@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Console Appender for logging to the console -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%highlight(%level)] - %highlight(%msg) %n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- RollingFile Appender for logging to a file with a dynamic filename -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- Define the base filename -->
+               <file>src/test/resources/placeholder-log.txt</file>
+
+        <!-- Set append to false to overwrite file content each time -->
+        <!-- <append>false</append> -->
+        <!-- Define the rolling policy with time-based file naming -->
+        <!--
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>target/logs/test-log-%d{yyyy-MM-dd-HH-mm-ss-SSS}.txt</fileNamePattern>
+            <maxHistory>0</maxHistory>
+        </rollingPolicy>
+        -->
+
+
+        <!-- Encoder for log formatting -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%highlight(%level)] - %highlight(%msg) %n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger: Log to both the console and the file -->
+    
+    <root level="ALL">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
