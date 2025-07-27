@@ -258,10 +258,21 @@ public class BasePage extends BaseClass{
 		LogInfoMessage("\n\nSTARTING test method: " + methodName);
 	}
 	
+	@DisplayName("after test teardown")
+	public void testTearDown() {
+		LogInfoMessage("Starting TEST teardown...");
+		
+	}
+	
 	@AfterEach
 	void logTestEnd(TestInfo testInfo) {
 		String methodName = testInfo.getTestMethod().orElseThrow().getName();
 		LogInfoMessage("END test method: " + methodName);
+        try {
+            testTearDown();
+        }catch(Exception e) {
+        	LogTestCaseFail("Test teardown FAILS WITH: " + e.getMessage());
+        }
 	}
     
     

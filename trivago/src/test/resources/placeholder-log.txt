@@ -229,3 +229,48 @@
 2025-07-21 00:50:35.716 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
 2025-07-21 00:50:35.719 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
 2025-07-21 00:50:35.719 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 01:12:29.015 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 01:12:29.019 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 01:12:29.019 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 01:15:25.609 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 01:15:25.612 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 01:15:25.612 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 02:03:15.685 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 02:03:15.687 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 02:03:15.687 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 02:19:10.672 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 02:19:10.675 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 02:19:10.675 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:02:33.831 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:02:33.834 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:02:33.834 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:05:18.963 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:05:18.965 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:05:18.965 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:17:31.513 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:17:31.515 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:17:31.515 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:26:29.092 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:26:29.095 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:26:29.095 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:27:39.611 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:27:39.613 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:27:39.613 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-22 03:29:37.579 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-22 03:29:37.581 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-22 03:29:37.581 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-26 22:46:57.830 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-26 22:46:57.832 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-26 22:46:57.833 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-26 22:48:21.668 [[34mINFO[0;39m] - [34mThe child class name is: MainPageTests[0;39m 
+2025-07-26 22:48:21.670 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-26 22:48:21.671 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-26 23:00:32.156 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-26 23:00:32.158 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-26 23:00:32.158 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-26 23:01:55.738 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-26 23:01:55.741 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-26 23:01:55.741 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 
+2025-07-27 23:34:43.932 [[34mINFO[0;39m] - [34mThe child class name is: SearchPageTests[0;39m 
+2025-07-27 23:34:43.935 [[34mINFO[0;39m] - [34mRunning setup for tests.[0;39m 
+2025-07-27 23:34:43.935 [[34mINFO[0;39m] - [34mSetting up Logger...[0;39m 

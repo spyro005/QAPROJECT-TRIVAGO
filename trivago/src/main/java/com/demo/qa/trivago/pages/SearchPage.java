@@ -33,6 +33,7 @@ public class SearchPage extends BasePage {
 	public static String priceResultMainXpath = "//div[@data-testid='clickout-area']//div[@data-testid='recommended-price' and @itemprop='price']";
 	
 	public static String resetButtonXpath = "//button[text()='Reset' and @data-testid='filters-popover-reset-button']";
+	public static String priceFilterApplyButtonXpath = "//button[text()='Apply' and @data-testid='filters-popover-apply-button']";
 	
 	@Override
 	public void setupWebpage() {
@@ -53,6 +54,13 @@ public class SearchPage extends BasePage {
 		//search
 		MainPage.search(driver);
 		
+	}
+	
+	@Override
+	public void testTearDown() {
+		super.testTearDown();
+		resetPriceFilter(this.driver);
+	
 	}
 	
 	public static void moveLeftSlider(WebDriver driver,int percent) {
@@ -99,6 +107,13 @@ public class SearchPage extends BasePage {
 
         // Regular expression to match digits
         String numberPart = price.replaceAll("[^0-9]", "");
+        while(numberPart.equals("")) {
+    		minPriceInput = driver.findElement(By.xpath(minPriceXpath));
+    		price = minPriceInput.getText();
+
+            // Regular expression to match digits
+            numberPart = price.replaceAll("[^0-9]", ""); 	
+        }
 
         // Convert to integer
         int number = Integer.parseInt(numberPart);
@@ -118,6 +133,13 @@ public class SearchPage extends BasePage {
 
         // Regular expression to match digits
         String numberPart = price.replaceAll("[^0-9]", "");
+        while(numberPart.equals("")) {
+    		maxPriceInput = driver.findElement(By.xpath(maxPriceXpath));
+    		price = maxPriceInput.getText();
+
+            // Regular expression to match digits
+            numberPart = price.replaceAll("[^0-9]", ""); 	
+        }
 
         // Convert to integer
         int number = Integer.parseInt(numberPart);
@@ -140,8 +162,26 @@ public class SearchPage extends BasePage {
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
 		
-		SearchPage.waitPageLoad(driver, 3);
+		SearchPage.waitPageLoad(driver, 5);
 
+	}
+	
+	public static void hitApplyPriceFilter(WebDriver driver) {
+		if (!BasePage.isElementVisible(driver,By.xpath(priceFilterPopUpXpath), 1000)){
+			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
+			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
+		}
+		
+		boolean clickedApply = BasePage.clickElement(driver, By.xpath(priceFilterApplyButtonXpath), 1000);
+		LogDebugMessage("Clicked price reset Box %b".formatted(clickedApply));
+		
+		if (BasePage.isElementVisible(driver,By.xpath(priceFilterPopUpXpath), 1000)){
+			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
+			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
+		}
+		
+		SearchPage.waitPageLoad(driver, 5);
+		
 	}
 	
 	public static ArrayList<Integer> getMainPrices(WebDriver driver) {
@@ -174,7 +214,7 @@ public class SearchPage extends BasePage {
 			String imagesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//button/img";
 			
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(s));
-			List<WebElement> elements = wait2.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
+			List<WebElement> elements = wait2.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
 			
 			LogDebugMessage("Found %d number of elements with xpath %s on search Page".formatted(elements.size(),imagesResultListXpath));
 			if(elements.size() > 0) return true;

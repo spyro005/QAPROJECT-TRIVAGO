@@ -28,6 +28,7 @@ public class SearchPageTests extends SearchPage {
 	public void priceMinTest(){
 
 		SearchPage.moveLeftSlider(this.driver,10);
+		SearchPage.hitApplyPriceFilter(this.driver);
 		int min = SearchPage.getMinPrice(this.driver);
 		LogDebugMessage("Found min price: %d".formatted(min));
 		
@@ -41,7 +42,7 @@ public class SearchPageTests extends SearchPage {
 		}
 		
 		//restore
-		SearchPage.resetPriceFilter(this.driver);
+		//SearchPage.resetPriceFilter(this.driver);
 		
     }
 	
@@ -50,6 +51,7 @@ public class SearchPageTests extends SearchPage {
 	public void priceMaxTest(){
 
 		SearchPage.moveRightSlider(this.driver,-10);
+		SearchPage.hitApplyPriceFilter(this.driver);
 		int max = SearchPage.getMaxPrice(this.driver);
 		LogDebugMessage("Found max price %d".formatted(max));
 		
@@ -63,7 +65,7 @@ public class SearchPageTests extends SearchPage {
 		}
 		
 		//restore
-		SearchPage.resetPriceFilter(this.driver);
+		//SearchPage.resetPriceFilter(this.driver);
 		
     }
 	
@@ -73,6 +75,7 @@ public class SearchPageTests extends SearchPage {
 
 		SearchPage.moveLeftSlider(this.driver,10);
 		SearchPage.moveRightSlider(this.driver,-10);
+		SearchPage.hitApplyPriceFilter(this.driver);
 		int min = SearchPage.getMinPrice(this.driver);
 		int max = SearchPage.getMaxPrice(this.driver);
 		LogDebugMessage("Found min, max prices: %d,%d".formatted(min,max));
@@ -88,7 +91,7 @@ public class SearchPageTests extends SearchPage {
 		}
 		
 		//restore
-		SearchPage.resetPriceFilter(this.driver);
+		//SearchPage.resetPriceFilter(this.driver);
 		
     }
 
