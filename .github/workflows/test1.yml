@@ -56,7 +56,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .trivago/target/site
+        publish_dir: ./trivago/target/site
+        publish_branch: gh-pages
         commit_message: "Publish test report"
 
       
