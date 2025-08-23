@@ -34,9 +34,11 @@ jobs:
         
     - name: Run JUnit tests
       run: mvn test
+      working-directory: ./trivago
 
     - name: Generate HTML report
       run: mvn surefire-report:report-only
+      working-directory: ./trivago
 
     - name: Upload to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
