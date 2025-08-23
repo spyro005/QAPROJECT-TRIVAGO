@@ -209,17 +209,34 @@ public class SearchPage extends BasePage {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(s));
 			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(searchButtonXpath)));
 			
-			if(element == null) return false;
+			if(element == null) {
+				LogError("Search button did not show %d seconds after search".formatted(s));
+				return false;
+			}
 			
 			String imagesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//button/img";
 			
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(s));
-			List<WebElement> elements = wait2.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
+			List<WebElement> elements = wait2.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
 			
 			LogDebugMessage("Found %d number of elements with xpath %s on search Page".formatted(elements.size(),imagesResultListXpath));
-			if(elements.size() > 0) return true;
+			if(elements.size() == 0) {
+				LogError("no images showed %s seconds after search".formatted(s));
+				return false;
+			}
+			
+			String mapBoxXpath = "//div[contains(@data-testid,'map-container')]";
+			
+			WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(s));
+			WebElement element3 = wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(mapBoxXpath)));
+			
+			if(element3 == null) { 
+				LogError("no map showed %s seconds after search".formatted(s));
+				return false;
+			}
+			
 			 
-			return false;
+			return true;
 		
 		}catch(Exception e) {
 			LogWarningMessage("Exception while waiting for Search Page to Load: %s".formatted(e.getMessage()));

@@ -46,7 +46,7 @@ public class MainPage extends BasePage{
 
 		clickShadowCookiesAllow(driver);
 		clickShadowCookiesOK(driver);
-
+		
 		
 		// close notif popup
 		boolean ret = closePopup(driver,3000);
@@ -118,8 +118,9 @@ public class MainPage extends BasePage{
 	public static boolean clickShadowCookiesOK(WebDriver driver) {
 		try {
 			//System.out.println("IN OK");
-			String shadowDivXpath = "//div[contains(@id,'usercentrics-root')]"; 
-			WebElement shadowHost = driver.findElement(By.xpath(shadowDivXpath));
+			String shadowDivXpath = "//aside[contains(@id,'usercentrics')]"; 
+			WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
+			WebElement shadowHost = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath(shadowDivXpath)));
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			Object shadowRoot = js.executeScript("return arguments[0].shadowRoot", shadowHost);
 			//Thread.sleep(3000);
@@ -153,8 +154,10 @@ public class MainPage extends BasePage{
 	
 	public static boolean clickShadowCookiesAllow(WebDriver driver) {
 		try {
-			String shadowDivXpath = "//div[contains(@id,'usercentrics-root')]"; 
-			WebElement shadowHost = driver.findElement(By.xpath(shadowDivXpath));
+			String shadowDivXpath = "//aside[contains(@id,'usercentrics')]"; 
+			WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
+			WebElement shadowHost = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath(shadowDivXpath)));
+			//WebElement shadowHost = driver.findElement(By.xpath(shadowDivXpath));
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			Object shadowRoot = js.executeScript("return arguments[0].shadowRoot", shadowHost);
 			
@@ -200,7 +203,12 @@ public class MainPage extends BasePage{
 	
 	public static boolean clickMaybeLaterSurvey(WebDriver driver) {
 		String maybeL = "//button/span[contains(text(),'Maybe later')]";
-		return BasePage.clickElement(driver, By.xpath(maybeL), 10000);
+		return BasePage.clickElement(driver, By.xpath(maybeL), 2000);
+	}
+	
+	public static boolean clickNotNowPref(WebDriver driver) {
+		String notNowPref = "//button/span[contains(text(),'Not now')]";
+		return BasePage.clickElement(driver, By.xpath(notNowPref), 5000);
 	}
 	
 	public static boolean login(WebDriver driver) {
@@ -216,15 +224,11 @@ public class MainPage extends BasePage{
 	    	boolean loggedIn = loginFromMain(driver);
 	    	LogDebugMessage("Ended login. \n Result: %b ".formatted(loggedIn));
 	    	assertTrue(loggedIn);
-	    	// maybe cookies will re appear
-			clickShadowCookiesOK(driver);
-			clickShadowCookiesAllow(driver);
 			
-	    	boolean ls = clickMaybeLaterSurvey(driver);
-	    	LogDebugMessage("Clicked later survey: %b".formatted(ls));
-	    	boolean cp = closePopup(driver,3000);
-	    	LogDebugMessage("Clicked popup: %b".formatted(cp));
-	    	cp = closePopup(driver,3000);
+	    	boolean np = clickNotNowPref(driver);
+	    	LogDebugMessage("Clicked Not now: %b".formatted(np));
+	    	
+	    	boolean cp = closePopup(driver,4000);
 	    	LogDebugMessage("Clicked popup: %b".formatted(cp));
 
 	    	boolean wp = waitPageLoad(driver,5);
@@ -252,7 +256,6 @@ public class MainPage extends BasePage{
 			
 			selectDates(driver);
 
-			
 			if (!BasePage.isElementVisible(driver,By.xpath(guestPopUpXpath), 2000)){
 				boolean clickedGuestBox = BasePage.clickElement(driver, By.xpath(guestBoxXpath), 3000);
 				LogDebugMessage("Clicked Guest Box %b".formatted(clickedGuestBox));
