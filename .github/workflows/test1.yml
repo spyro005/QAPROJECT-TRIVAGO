@@ -31,9 +31,21 @@ jobs:
     
     - name: List files in current directory
       run: ls -la
+
+    - run: firefox --version
+    - run: geckodriver --version
+
+    - name: Start virtual display
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        Xvfb :99 -ac &
+        export DISPLAY=:99
         
     - name: Run JUnit tests
-      run: mvn test
+      run: |
+        export DISPLAY=:99
+        mvn test
       working-directory: ./trivago
 
     - name: Generate HTML report
