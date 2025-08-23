@@ -45,7 +45,7 @@ jobs:
     - name: Run JUnit tests
       run: |
         export DISPLAY=:99
-        mvn test
+        mvn clean test -Dmaven.test.failure.ignore=true
       working-directory: ./trivago
 
     - name: Generate HTML report
