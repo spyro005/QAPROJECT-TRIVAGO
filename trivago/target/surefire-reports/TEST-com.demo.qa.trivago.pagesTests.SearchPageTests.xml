@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.demo.qa.trivago.pagesTests.SearchPageTests" time="45.621" tests="3" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/test-classes:/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/classes:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/platform/junit-platform-engine/1.12.0/junit-platform-engine-1.12.0.jar:/Users/spirosantonatos/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/spirosantonatos/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.0/junit-jupiter-engine-5.12.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-java/4.28.1/selenium-java-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-api/4.28.1/selenium-api-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.28.1/selenium-chrome-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.28.1/selenium-chromium-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.28.1/selenium-manager-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.28.1/selenium-devtools-v130-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.28.1/selenium-devtools-v131-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v132/4.28.1/selenium-devtools-v132-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.28.1/selenium-devtools-v85-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.28.1/selenium-edge-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.28.1/selenium-firefox-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-http/4.28.1/selenium-http-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.28.1/selenium-ie-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.28.1/selenium-remote-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-api/1.46.0/opentelemetry-api-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-context/1.46.0/opentelemetry-context-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.46.0/opentelemetry-exporter-logging-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.46.0/opentelemetry-sdk-common-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.46.0/opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.46.0/opentelemetry-sdk-extension-autoconfigure-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.46.0-alpha/opentelemetry-api-incubator-1.46.0-alpha.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.46.0/opentelemetry-sdk-trace-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.46.0/opentelemetry-sdk-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.46.0/opentelemetry-sdk-metrics-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.46.0/opentelemetry-sdk-logs-1.46.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-os/4.28.1/selenium-os-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.28.1/selenium-safari-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-support/4.28.1/selenium-support-4.28.1.jar:/Users/spirosantonatos/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/guava/33.4.0-jre/guava-33.4.0-jre.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/spirosantonatos/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/spirosantonatos/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/spirosantonatos/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/spirosantonatos/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/spirosantonatos/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-json/4.28.1/selenium-json-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/spirosantonatos/.m2/repository/ch/qos/logback/logback-classic/1.5.17/logback-classic-1.5.17.jar:/Users/spirosantonatos/.m2/repository/ch/qos/logback/logback-core/1.5.17/logback-core-1.5.17.jar:/Users/spirosantonatos/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Athens"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.7.v20250502-0916/jre/lib"/>
+    <property name="sun.java.command" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/surefire/surefirebooter-20250823202105854_3.jar /Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/surefire 2025-08-23T20-21-05_760-jvmRun1 surefire-20250823202105854_1tmp surefire_0-20250823202105854_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/test-classes:/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/classes:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/platform/junit-platform-engine/1.12.0/junit-platform-engine-1.12.0.jar:/Users/spirosantonatos/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/spirosantonatos/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.0/junit-jupiter-engine-5.12.0.jar:/Users/spirosantonatos/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-java/4.28.1/selenium-java-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-api/4.28.1/selenium-api-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.28.1/selenium-chrome-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.28.1/selenium-chromium-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.28.1/selenium-manager-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.28.1/selenium-devtools-v130-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.28.1/selenium-devtools-v131-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v132/4.28.1/selenium-devtools-v132-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.28.1/selenium-devtools-v85-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.28.1/selenium-edge-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.28.1/selenium-firefox-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-http/4.28.1/selenium-http-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.28.1/selenium-ie-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.28.1/selenium-remote-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-api/1.46.0/opentelemetry-api-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-context/1.46.0/opentelemetry-context-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.46.0/opentelemetry-exporter-logging-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.46.0/opentelemetry-sdk-common-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.46.0/opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.46.0/opentelemetry-sdk-extension-autoconfigure-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.46.0-alpha/opentelemetry-api-incubator-1.46.0-alpha.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.46.0/opentelemetry-sdk-trace-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.46.0/opentelemetry-sdk-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.46.0/opentelemetry-sdk-metrics-1.46.0.jar:/Users/spirosantonatos/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.46.0/opentelemetry-sdk-logs-1.46.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-os/4.28.1/selenium-os-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.28.1/selenium-safari-driver-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-support/4.28.1/selenium-support-4.28.1.jar:/Users/spirosantonatos/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/guava/33.4.0-jre/guava-33.4.0-jre.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/spirosantonatos/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/spirosantonatos/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/spirosantonatos/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/spirosantonatos/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/spirosantonatos/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/spirosantonatos/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/spirosantonatos/.m2/repository/org/seleniumhq/selenium/selenium-json/4.28.1/selenium-json-4.28.1.jar:/Users/spirosantonatos/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/spirosantonatos/.m2/repository/ch/qos/logback/logback-classic/1.5.17/logback-classic-1.5.17.jar:/Users/spirosantonatos/.m2/repository/ch/qos/logback/logback-core/1.5.17/logback-core-1.5.17.jar:/Users/spirosantonatos/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/spirosantonatos"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.7.v20250502-0916/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago/target/surefire/surefirebooter-20250823202105854_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="spirosantonatos"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="/Users/spirosantonatos/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/70/2vk2n2rj04v86737n3dcws1w0000gn/T/"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/Users/spirosantonatos/git/QAPROJECT-TRIVAGO/trivago"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/spirosantonatos/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="priceMinTest" classname="com.demo.qa.trivago.pagesTests.SearchPageTests" time="10.923">
+    <system-out><![CDATA[2025-08-23 20:21:33.196 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mThe child class name is: SearchPageTests&amp#27;[0;39m 
+2025-08-23 20:21:33.196 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mRunning setup for tests.&amp#27;[0;39m 
+2025-08-23 20:21:33.196 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mSetting up Logger...&amp#27;[0;39m 
+2025-08-23 20:21:33.197 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mSetting up firefox driver&amp#27;[0;39m 
+Setting up Start Web page...
+2025-08-23 20:21:35.749 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mSetting up Start Web page...&amp#27;[0;39m 
+buttons
+[[org.openqa.selenium.remote.RemoteWebElement@96a1a204 -> unknown locator], [org.openqa.selenium.remote.RemoteWebElement@87565cee -> unknown locator], [org.openqa.selenium.remote.RemoteWebElement@5a10e317 -> unknown locator]]
+2025-08-23 20:21:38.194 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mShadow button: [org.openqa.selenium.remote.RemoteWebElement@5a10e317 -> unknown locator]&amp#27;[0;39m 
+2025-08-23 20:21:38.277 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mClicked 'shadow' button 'Allow all' (cookies accept)&amp#27;[0;39m 
+2025-08-23 20:21:40.335 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException while clicking 'shadow OK cookies': Expected condition failed: waiting for com.demo.qa.trivago.pages.MainPage$$Lambda/0x000000012d29c8b0@58860997 (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:21:40.582 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mClick result: true of popup button with xpath (//button/span[contains(text(),'Close')]/preceding-sibling::span)[1]&amp#27;[0;39m 
+2025-08-23 20:21:41.873 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mClick result: true of popup button with xpath (//button/span[contains(text(),'Close')]/preceding-sibling::span)[1]&amp#27;[0;39m 
+2025-08-23 20:21:42.090 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked login: true&amp#27;[0;39m 
+2025-08-23 20:21:43.318 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked login Popup: true&amp#27;[0;39m 
+2025-08-23 20:21:43.324 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWaited for email page load for login: true&amp#27;[0;39m 
+2025-08-23 20:21:43.324 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mStarting login ...&amp#27;[0;39m 
+2025-08-23 20:21:43.517 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked email box: true 
+ with xpath //input[@name='email']&amp#27;[0;39m 
+2025-08-23 20:21:43.805 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked continue box: true 
+ with xpath //button[@type='submit' and contains(text(),'Continue')]&amp#27;[0;39m 
+2025-08-23 20:21:44.338 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWaited password page: true&amp#27;[0;39m 
+2025-08-23 20:21:44.549 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked password box: true 
+ with xpath true&amp#27;[0;39m 
+2025-08-23 20:21:44.824 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked password box: true 
+ with xpath //button[@type='submit' and contains(text(),'Log in')]&amp#27;[0;39m 
+2025-08-23 20:21:44.825 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mEnded login. 
+ Result: true &amp#27;[0;39m 
+2025-08-23 20:21:47.311 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Not now: true&amp#27;[0;39m 
+2025-08-23 20:21:47.569 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mClick result: true of popup button with xpath (//button/span[contains(text(),'Close')]/preceding-sibling::span)[1]&amp#27;[0;39m 
+2025-08-23 20:21:47.570 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked popup: true&amp#27;[0;39m 
+2025-08-23 20:21:48.141 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 5 number of elements (accomondation results) with xpath //ul//li//div[contains(@data-testid,'deal-item')]//div/img on main Page&amp#27;[0;39m 
+2025-08-23 20:21:48.143 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWaited for main page load: true&amp#27;[0;39m 
+2025-08-23 20:21:48.386 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked search box: true 
+ with xpath //input[@role='searchbox']&amp#27;[0;39m 
+2025-08-23 20:21:49.308 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked first sugg true&amp#27;[0;39m 
+2025-08-23 20:21:50.351 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound first day datetime '2025-08-01' from month 1 from popup and first day  datetime '2025-09-01' from month 2&amp#27;[0;39m 
+2025-08-23 20:21:50.351 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound date parts 2025/08/01 for month 1 and 2025/09/01 for month2&amp#27;[0;39m 
+2025-08-23 20:21:50.354 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound last days for months 31, 30 and first day for 2nd month 01&amp#27;[0;39m 
+2025-08-23 20:21:50.601 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Last Day 31 in month1 result: true&amp#27;[0;39m 
+2025-08-23 20:21:50.857 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked First Day 01 in month2 result: true&amp#27;[0;39m 
+2025-08-23 20:21:51.072 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Guest Box Apply true&amp#27;[0;39m 
+2025-08-23 20:21:51.275 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Search true&amp#27;[0;39m 
+2025-08-23 20:21:51.279 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34m
+
+STARTING test method: priceMinTest&amp#27;[0;39m 
+2025-08-23 20:21:53.553 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:21:53.554 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:21:54.356 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:21:54.380 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWill move element from (347,368) to (380,368)&amp#27;[0;39m 
+2025-08-23 20:21:54.787 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mMoved Element to 380,368&amp#27;[0;39m 
+2025-08-23 20:21:55.726 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:21:56.748 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:21:56.748 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 1 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:21:58.305 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+2025-08-23 20:22:00.393 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:00.394 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:00.781 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:01.385 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound min price: 68&amp#27;[0;39m 
+2025-08-23 20:22:01.669 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mEND test method: priceMinTest&amp#27;[0;39m 
+2025-08-23 20:22:01.670 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mStarting TEST teardown...&amp#27;[0;39m 
+2025-08-23 20:22:01.934 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:22:02.184 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:02.192 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+]]></system-out>
+  </testcase>
+  <testcase name="priceMaxTest" classname="com.demo.qa.trivago.pagesTests.SearchPageTests" time="8.144">
+    <system-out><![CDATA[2025-08-23 20:22:02.205 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34m
+
+STARTING test method: priceMaxTest&amp#27;[0;39m 
+2025-08-23 20:22:04.244 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:04.245 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:05.124 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:05.148 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWill move element from (658,368) to (625,368)&amp#27;[0;39m 
+2025-08-23 20:22:05.551 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mMoved Element to 625,368&amp#27;[0;39m 
+2025-08-23 20:22:05.796 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:22:06.817 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:06.818 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 1 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:06.829 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+2025-08-23 20:22:08.904 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:08.906 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:09.151 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:09.573 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound max price 500&amp#27;[0;39m 
+2025-08-23 20:22:09.886 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mEND test method: priceMaxTest&amp#27;[0;39m 
+2025-08-23 20:22:09.887 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mStarting TEST teardown...&amp#27;[0;39m 
+2025-08-23 20:22:10.104 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:22:10.327 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:10.337 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+]]></system-out>
+  </testcase>
+  <testcase name="priceMinMaxTest" classname="com.demo.qa.trivago.pagesTests.SearchPageTests" time="7.865">
+    <failure message="Price 180 is not between min and max allowed 500, 500 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Price 180 is not between min and max allowed 500, 500 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.demo.qa.trivago.BaseClass.LogTestCaseFail(BaseClass.java:149)
+	at com.demo.qa.trivago.pagesTests.SearchPageTests.priceMinMaxTest(SearchPageTests.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[2025-08-23 20:22:10.351 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34m
+
+STARTING test method: priceMinMaxTest&amp#27;[0;39m 
+2025-08-23 20:22:12.418 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:12.418 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:12.649 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:12.664 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWill move element from (347,368) to (380,368)&amp#27;[0;39m 
+2025-08-23 20:22:13.016 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mMoved Element to 380,368&amp#27;[0;39m 
+2025-08-23 20:22:13.038 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mWill move element from (658,368) to (625,368)&amp#27;[0;39m 
+2025-08-23 20:22:13.383 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mMoved Element to 625,368&amp#27;[0;39m 
+2025-08-23 20:22:13.625 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:22:14.660 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:14.660 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 1 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:14.685 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+2025-08-23 20:22:16.775 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mException on waiting element to be visible: &amp#27;[0;39m 
+2025-08-23 20:22:16.776 [&amp#27;[31mWARN&amp#27;[0;39m] - &amp#27;[31mExpected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='refinement-row-active-popover'] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 22714, moz:profile: /var/folders/70/2vk2n2rj04v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 80207359-ca50-493c-ae38-f8ce8ba0e8a2&amp#27;[0;39m 
+2025-08-23 20:22:17.019 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:17.454 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound min, max prices: 500,500&amp#27;[0;39m 
+2025-08-23 20:22:17.737 [&amp#27;[1;31mERROR&amp#27;[0;39m] - &amp#27;[1;31mERROR: TEST CASE FAILED: Price 180 is not between min and max allowed 500, 500  &amp#27;[0;39m 
+2025-08-23 20:22:17.749 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mEND test method: priceMinMaxTest&amp#27;[0;39m 
+2025-08-23 20:22:17.750 [&amp#27;[34mINFO&amp#27;[0;39m] - &amp#27;[34mStarting TEST teardown...&amp#27;[0;39m 
+2025-08-23 20:22:17.972 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked price reset Box true&amp#27;[0;39m 
+2025-08-23 20:22:18.193 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mClicked Price Box true&amp#27;[0;39m 
+2025-08-23 20:22:18.202 [&amp#27;[39mDEBUG&amp#27;[0;39m] - &amp#27;[39mFound 35 number of elements with xpath //div[@data-testid='result-list-ready']//ol//li//div//button/img on search Page&amp#27;[0;39m 
+]]></system-out>
+  </testcase>
+</testsuite>

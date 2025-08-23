@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.demo.qa.trivago.pagesTests.SearchPageTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.62 s <<< FAILURE! -- in com.demo.qa.trivago.pagesTests.SearchPageTests
+com.demo.qa.trivago.pagesTests.SearchPageTests.priceMinMaxTest -- Time elapsed: 7.865 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Price 180 is not between min and max allowed 500, 500 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.demo.qa.trivago.BaseClass.LogTestCaseFail(BaseClass.java:149)
+	at com.demo.qa.trivago.pagesTests.SearchPageTests.priceMinMaxTest(SearchPageTests.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
