@@ -25,6 +25,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+
+    - name: Show current directory
+      run: pwd
+    
+    - name: List files in current directory
+      run: ls -la
         
     - name: Run JUnit tests
       run: mvn test
