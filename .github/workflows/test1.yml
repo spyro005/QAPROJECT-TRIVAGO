@@ -52,9 +52,9 @@ jobs:
       run: mvn surefire-report:report-only
       working-directory: ./trivago
 
-    - name: Make site
-      run: mvn site
-      working-directory: ./trivago
+    #- name: Make site
+    #  run: mvn site
+    #  working-directory: ./trivago
 
     - name: List files in trivago directory
       run: ls ./trivago ; ls ./trivago/target; ls ./trivago/target/surefire-reports; ls ./trivago/target/site
@@ -63,7 +63,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./trivago/target/site
+        publish_dir: ./trivago/target/reports
         publish_branch: gh-pages
         commit_message: "Publish test report"
 
