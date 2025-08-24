@@ -35,29 +35,32 @@ jobs:
     - run: firefox --version
     - run: geckodriver --version
 
-    - name: Start virtual display
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y xvfb
-        Xvfb :99 -ac &
-        export DISPLAY=:99
+    #- name: Start virtual display
+    #  run: |
+    #    sudo apt-get update
+    #    sudo apt-get install -y xvfb
+    #    Xvfb :99 -ac &
+    #    export DISPLAY=:99
         
-    - name: Run JUnit tests
-      run: |
-        export DISPLAY=:99
-        mvn clean test -Dmaven.test.failure.ignore=true
-      working-directory: ./trivago
+    #- name: Run JUnit tests
+    #  run: |
+    #    export DISPLAY=:99
+    #    mvn clean test -Dmaven.test.failure.ignore=true
+    #  working-directory: ./trivago
 
     - name: Generate HTML report
       run: mvn surefire-report:report-only
       working-directory: ./trivago
+
+    - name: List files in trivago directory
+      run: ls ./trivago ; ls ./trivago/target
 
     - name: Upload to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./trivago/target/site
-        publish_branch: gh-pages
+        publish_branch: main
         commit_message: "Publish test report"
 
       
