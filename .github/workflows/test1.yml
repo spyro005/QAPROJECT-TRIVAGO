@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Schedult maven UI tests
+name: Run maven UI tests and Publish results
 
 on:
   workflow_dispatch:  # Enables manual trigg
@@ -35,18 +35,18 @@ jobs:
     - run: firefox --version
     - run: geckodriver --version
 
-    #- name: Start virtual display
-    #  run: |
-    #    sudo apt-get update
-    #    sudo apt-get install -y xvfb
-    #    Xvfb :99 -ac &
-    #    export DISPLAY=:99
+    - name: Start virtual display
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        Xvfb :99 -ac &
+        export DISPLAY=:99
         
-    #- name: Run JUnit tests
-    #  run: |
-    #    export DISPLAY=:99
-    #    mvn clean test -Dmaven.test.failure.ignore=true
-    #  working-directory: ./trivago
+    - name: Run JUnit tests
+      run: |
+        export DISPLAY=:99
+        mvn clean test -Dmaven.test.failure.ignore=true
+      working-directory: ./trivago
 
     - name: Generate HTML report
       run: mvn surefire-report:report-only
