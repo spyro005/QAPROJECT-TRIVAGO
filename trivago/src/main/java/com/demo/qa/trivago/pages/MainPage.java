@@ -45,7 +45,7 @@ public class MainPage extends BasePage{
 		//Button 'Allow All'
 
 		clickShadowCookiesAllow(driver);
-		clickShadowCookiesOK(driver);
+		//clickShadowCookiesOK(driver);
 		
 		
 		// close notif popup

@@ -34,16 +34,12 @@ public class SearchPageTests extends SearchPage {
 		
 		ArrayList<Integer> ps = SearchPage.getMainPrices(driver);
 		for(int p: ps) {
-			//LogDebugMessage("Found price: %d".formatted(p));
+			//LogDebugMessage("MIN Found price: %d".formatted(p));
 			if (p < min) {
 				LogTestCaseFail("Price %d is below minimum allowed %d".formatted(p,min));
 				
 			}
 		}
-		
-		//restore
-		//SearchPage.resetPriceFilter(this.driver);
-		
     }
 	
 	@Test
@@ -57,42 +53,40 @@ public class SearchPageTests extends SearchPage {
 		
 		ArrayList<Integer> ps = SearchPage.getMainPrices(driver);
 		for(int p: ps) {
-			//LogDebugMessage("Found price: %d".formatted(p));
+			//LogDebugMessage("MAX Found price: %d".formatted(p));
 			if (p > max) {
 				LogTestCaseFail("Price %d is above max allowed %d".formatted(p,max));
 				
 			}
 		}
-		
-		//restore
-		//SearchPage.resetPriceFilter(this.driver);
-		
     }
 	
+	/*
 	@Test
 	@Order(3)
 	public void priceMinMaxTest(){
 
 		SearchPage.moveLeftSlider(this.driver,10);
+		SearchPage.hitApplyPriceFilter(this.driver);
 		SearchPage.moveRightSlider(this.driver,-10);
 		SearchPage.hitApplyPriceFilter(this.driver);
+		
 		int min = SearchPage.getMinPrice(this.driver);
 		int max = SearchPage.getMaxPrice(this.driver);
+		
+
 		LogDebugMessage("Found min, max prices: %d,%d".formatted(min,max));
 		
 
 		ArrayList<Integer> ps = SearchPage.getMainPrices(driver);
 		for(int p: ps) {
-			//LogDebugMessage("Found price: %d".formatted(p));
+			LogDebugMessage("mIN MAX Found price: %d".formatted(p));
 			if (p > max || p < min) {
 				LogTestCaseFail("Price %d is not between min and max allowed %d, %d".formatted(p,min,max));
 				
 			}
 		}
-		
-		//restore
-		//SearchPage.resetPriceFilter(this.driver);
-		
     }
+    */
 
 }

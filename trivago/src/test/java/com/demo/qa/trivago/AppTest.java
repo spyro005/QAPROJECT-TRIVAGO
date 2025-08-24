@@ -10,10 +10,10 @@ import org.junit.jupiter.api.Test;
 public class AppTest {
 
     /**
-     * Rigorous Test :-)
+     * Basic Test
      */
     @Test
     public void shouldAnswerWithTrue() {
-        assertTrue(true);
+        assertTrue(2 == (1+1));
     }
 }

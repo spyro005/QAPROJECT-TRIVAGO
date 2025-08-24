@@ -60,6 +60,8 @@ public class SearchPage extends BasePage {
 	public void testTearDown() {
 		super.testTearDown();
 		resetPriceFilter(this.driver);
+		boolean ws = SearchPage.waitPageLoad(driver, 10);
+		LogDebugMessage("Waited search page Load: %b".formatted(ws));
 	
 	}
 	
@@ -69,6 +71,8 @@ public class SearchPage extends BasePage {
 			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
+		
+		priceFilterPartsVis(driver);
 		
 		WebElement priceSlider = driver.findElement(By.xpath(sliderDivXpath));
 		int sw = BasePage.getElementWidth(priceSlider);
@@ -86,6 +90,8 @@ public class SearchPage extends BasePage {
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
 		
+		priceFilterPartsVis(driver);
+		
 		WebElement priceSlider = driver.findElement(By.xpath(sliderDivXpath));
 		int sw = BasePage.getElementWidth(priceSlider);
 		int result = (percent * sw) / 100;
@@ -101,6 +107,8 @@ public class SearchPage extends BasePage {
 			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
+		
+		priceFilterPartsVis(driver);
 		
 		WebElement minPriceInput = driver.findElement(By.xpath(minPriceXpath));
 		String price = minPriceInput.getText();
@@ -128,6 +136,8 @@ public class SearchPage extends BasePage {
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
 		
+		priceFilterPartsVis(driver);
+		
 		WebElement maxPriceInput = driver.findElement(By.xpath(maxPriceXpath));
 		String price = maxPriceInput.getText();
 
@@ -147,12 +157,25 @@ public class SearchPage extends BasePage {
 		return number;
 	}
 	
+	public static void priceFilterPartsVis(WebDriver driver) {
+		boolean pfv = BasePage.isElementVisible(driver,By.xpath(sliderDivXpath), 3000);
+		LogDebugMessage("slider vis xpath %b".formatted(pfv));
+		pfv = BasePage.isElementVisible(driver,By.xpath(minPriceXpath), 3000);
+		LogDebugMessage("Min price slider vis xpath %b".formatted(pfv));
+		pfv = BasePage.isElementVisible(driver,By.xpath(maxPriceXpath), 3000);
+		LogDebugMessage("Max price slider vis xpath %b".formatted(pfv));
+		
+		
+	}
+	
 	public static void resetPriceFilter(WebDriver driver) {
 		
 		if (!BasePage.isElementVisible(driver,By.xpath(priceFilterPopUpXpath), 2000)){
 			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
+		
+		priceFilterPartsVis(driver);
 		
 		boolean clickedReset = BasePage.clickElement(driver, By.xpath(resetButtonXpath), 1000);
 		LogDebugMessage("Clicked price reset Box %b".formatted(clickedReset));
@@ -171,6 +194,8 @@ public class SearchPage extends BasePage {
 			boolean clickedPrice = BasePage.clickElement(driver, By.xpath(priceFilterXpath), 1000);
 			LogDebugMessage("Clicked Price Box %b".formatted(clickedPrice));
 		}
+		
+		priceFilterPartsVis(driver);
 		
 		boolean clickedApply = BasePage.clickElement(driver, By.xpath(priceFilterApplyButtonXpath), 1000);
 		LogDebugMessage("Clicked price reset Box %b".formatted(clickedApply));
@@ -217,9 +242,20 @@ public class SearchPage extends BasePage {
 			String imagesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//button/img";
 			
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(s));
-			List<WebElement> elements = wait2.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
+			List<WebElement> elements = wait2.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
 			
 			LogDebugMessage("Found %d number of elements with xpath %s on search Page".formatted(elements.size(),imagesResultListXpath));
+			if(elements.size() == 0) {
+				LogError("no images showed %s seconds after search".formatted(s));
+				return false;
+			}
+			
+			String titlesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//section[contains(@data-testid,'item-name-section')]//span[@title]";
+			
+			WebDriverWait wait2b = new WebDriverWait(driver, Duration.ofSeconds(s));
+			List<WebElement> elements3 = wait2b.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(titlesResultListXpath)));
+			
+			LogDebugMessage("Found %d number of elements with xpath %s on search Page".formatted(elements3.size(),titlesResultListXpath));
 			if(elements.size() == 0) {
 				LogError("no images showed %s seconds after search".formatted(s));
 				return false;

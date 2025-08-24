@@ -14,6 +14,7 @@ import org.junit.jupiter.api.TestInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -163,12 +164,12 @@ public class BasePage extends BaseClass{
  
         // Create an Actions object to perform drag and drop
         Actions actions = new Actions(driver);
-        
         // Drag the element by 100 pixels to the right and 50 pixels down
         actions.clickAndHold(element)
                .moveByOffset(px, py)  // Move the element by px to the right and py down
                .release()              // Release the element
                .perform();
+        
         
         LogDebugMessage("Moved Element to %d,%d".formatted(newX,newY));
     	
