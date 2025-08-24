@@ -57,7 +57,7 @@ jobs:
     #  working-directory: ./trivago
 
     - name: List files in trivago directory
-      run: ls ./trivago ; ls ./trivago/target; ls ./trivago/target/surefire-reports; ls ./trivago/target/site
+      run: ls ./trivago ; ls ./trivago/target; ls ./trivago/target/surefire-reports; ls ./trivago/target/reports
 
     - name: Upload to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
