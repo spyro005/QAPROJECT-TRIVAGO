@@ -190,16 +190,27 @@ public class MainPage extends BasePage{
 		return true;
 	}
 	
-	public static String loginButtonXpath = "//button//span[contains(text(),'Log in')]";
 	
 	public static boolean clickLogin(WebDriver driver) {
-		return BasePage.clickElement(driver, By.xpath(loginButtonXpath), 5000);
+		String loginButtonXpath = "//button//span[contains(text(),'Log in')]";
+		String signinButtonXpath = "//button//span[contains(text(),'Sign in')]";
+		if (BasePage.isElementVisible(driver, By.xpath(loginButtonXpath), 2000)) {
+			return BasePage.clickElement(driver, By.xpath(loginButtonXpath), 5000);
+		}else if (BasePage.isElementVisible(driver, By.xpath(signinButtonXpath), 2000)) {
+			return BasePage.clickElement(driver, By.xpath(signinButtonXpath), 5000);	
+		}
+		return false;
 	}
 	
 	public static boolean clickLoginOrCreatePopup(WebDriver driver) {
 		String loginCreate = "//button/span[contains(text(),'Log in or create')]";
-		return BasePage.clickElement(driver, By.xpath(loginCreate), 5000);
-	}
+		String signinCreate = "//button/span[contains(text(),'Sign in or create')]";
+		if (BasePage.isElementVisible(driver, By.xpath(loginCreate), 2000)) {
+			return BasePage.clickElement(driver, By.xpath(loginCreate), 5000);
+		}else if (BasePage.isElementVisible(driver, By.xpath(signinCreate), 2000)) {
+			return BasePage.clickElement(driver, By.xpath(signinCreate), 5000);	
+		}
+		return false;}
 	
 	public static boolean clickMaybeLaterSurvey(WebDriver driver) {
 		String maybeL = "//button/span[contains(text(),'Maybe later')]";

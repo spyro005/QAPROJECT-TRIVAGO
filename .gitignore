@@ -2,3 +2,4 @@
 .project
 trivago/.DS_Store
 trivago/target/logs/
+trivago/src/test/resources/placeholder-log.txt
