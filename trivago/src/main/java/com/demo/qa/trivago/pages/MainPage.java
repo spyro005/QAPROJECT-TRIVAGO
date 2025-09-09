@@ -219,8 +219,14 @@ public class MainPage extends BasePage{
 	
 	public static boolean clickNotNowPref(WebDriver driver) {
 		String notNowPref = "//button/span[contains(text(),'Not now')]";
-		return BasePage.clickElement(driver, By.xpath(notNowPref), 5000);
-	}
+		String notNowBt = "//button[contains(text(),'Not now')]";
+		if(BasePage.isElementVisible(driver, By.xpath(notNowPref), 4000)){
+			return BasePage.clickElement(driver, By.xpath(notNowPref), 2000);
+		}else if(BasePage.isElementVisible(driver, By.xpath(notNowBt),4000)){
+			return BasePage.clickElement(driver, By.xpath(notNowBt), 2000);
+		}
+		return false;
+		}
 	
 	public static boolean login(WebDriver driver) {
 		try {
