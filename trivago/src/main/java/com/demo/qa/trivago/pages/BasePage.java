@@ -153,26 +153,51 @@ public class BasePage extends BaseClass{
     	
     }
     
-    public static void dragAndDropElementByXY(WebDriver driver,WebElement element,int px,int py) {
+    public static void dragAndDropElementByXY(WebDriver driver,WebElement element,int px,int py, int steps) {
     	int cx = getX(element);
     	int cy = getY(element);
     	
     	int newX = cx + px;
     	int newY = cy + py;
     	
+    	
+    	
     	LogDebugMessage("Will move element from (%d,%d) to (%d,%d)".formatted(cx,cy,newX,newY));
  
         // Create an Actions object to perform drag and drop
         Actions actions = new Actions(driver);
-        // Drag the element by 100 pixels to the right and 50 pixels down
-        actions.clickAndHold(element)
-               .moveByOffset(px, py)  // Move the element by px to the right and py down
-               .release()              // Release the element
-               .perform();
+        
+        if( steps <= 1) {
+        	LogDebugMessage("Moving element in one drop");
+	        // Drag the element by px pixels to the right and py pixels down
+	        actions.clickAndHold(element)
+	               .moveByOffset(px, py)  // Move the element by px to the right and py down
+	               .release()              // Release the element
+	               .perform();
+	        
+	        LogDebugMessage("Moved Element to %d,%d".formatted(newX,newY));
+	    	
+        }else {
+        	LogDebugMessage("Moving element in %d steps".formatted(steps));
+        	// Click and hold the source element
+            actions.clickAndHold(element).perform();
+            int dx = px / steps;
+            int dy = py / steps;
+    		// Move slider in steps
+    		for(int s = 0; s < steps;s++) {
+    			cx = getX(element);
+    			cy = getY(element);
+    			LogDebugMessage("Moving element by %d , %d , from %d %d".formatted(dx,dy,cx,cy));
+    			actions.moveByOffset(dx, dy).pause(200).perform();
+    		}
+    		// Release at final position
+            actions.release().perform();
+            
+            LogDebugMessage("Moved Element to %d,%d".formatted((cx+dx),(cy+dy)));
+        	
+        }
         
         
-        LogDebugMessage("Moved Element to %d,%d".formatted(newX,newY));
-    	
     }
     
     

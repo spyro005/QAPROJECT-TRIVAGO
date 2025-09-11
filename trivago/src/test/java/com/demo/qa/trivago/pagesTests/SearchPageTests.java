@@ -61,14 +61,14 @@ public class SearchPageTests extends SearchPage {
 		}
     }
 	
-	/*
+	
 	@Test
 	@Order(3)
 	public void priceMinMaxTest(){
 
-		SearchPage.moveLeftSlider(this.driver,10);
-		SearchPage.hitApplyPriceFilter(this.driver);
-		SearchPage.moveRightSlider(this.driver,-10);
+		SearchPage.moveLeftSlider(this.driver,20);
+		//SearchPage.hitApplyPriceFilter(this.driver);
+		SearchPage.moveRightSlider(this.driver,-20);
 		SearchPage.hitApplyPriceFilter(this.driver);
 		
 		int min = SearchPage.getMinPrice(this.driver);
@@ -80,13 +80,13 @@ public class SearchPageTests extends SearchPage {
 
 		ArrayList<Integer> ps = SearchPage.getMainPrices(driver);
 		for(int p: ps) {
-			LogDebugMessage("mIN MAX Found price: %d".formatted(p));
+			//LogDebugMessage("mIN MAX Found price: %d".formatted(p));
 			if (p > max || p < min) {
 				LogTestCaseFail("Price %d is not between min and max allowed %d, %d".formatted(p,min,max));
 				
 			}
 		}
     }
-    */
+    
 
 }

@@ -79,7 +79,7 @@ public class SearchPage extends BasePage {
 		int result = (percent * sw) / 100;
 		
 		WebElement leftSlider = driver.findElement(By.xpath(priceLeftSliderXpath));
-		BasePage.dragAndDropElementByXY(driver, leftSlider, result, 0);	
+		BasePage.dragAndDropElementByXY(driver, leftSlider, result, 0,5);	
 		
 	}
 	
@@ -96,8 +96,11 @@ public class SearchPage extends BasePage {
 		int sw = BasePage.getElementWidth(priceSlider);
 		int result = (percent * sw) / 100;
 		
+
+		
+		// Move slider directly
 		WebElement rightSlider = driver.findElement(By.xpath(priceRightSliderXpath));
-		BasePage.dragAndDropElementByXY(driver, rightSlider, result, 0);	
+		BasePage.dragAndDropElementByXY(driver, rightSlider, result, 0,5);	
 		
 	}
 	
