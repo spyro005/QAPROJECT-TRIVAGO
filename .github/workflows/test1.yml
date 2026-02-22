@@ -11,8 +11,8 @@ name: Run maven UI tests and Publish results
 on:
   workflow_dispatch:  # Enables manual trigg
   schedule:
-    # Runs every day at 20:30 PM UTC
-    - cron: '30 20 * * *'
+    # Runs every Monday at 20:30 PM UTC
+    - cron: '30 20 * * 1'
 
 jobs:
   build-and-test:
