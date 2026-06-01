@@ -20,9 +20,9 @@ public class SearchPage extends BasePage {
 	
 	//Filters xpath
 	
-	public static String filtersRowXpath = "//div[@data-testid='refinement-row']";
+	public static String filtersRowXpath = "//div/ul[@id='refinement-row-filters']";
 	//Price filter
-	public static String priceFilterXpath = filtersRowXpath + "//div[@data-testid='refinement_row_element']" +"//button[@name='budget']";
+	public static String priceFilterXpath = filtersRowXpath + "//div[@data-testid='refinement_row_element']" + "//button[@name='budget-filter']" + "//span[contains(text(),Price)]";
 	public static String priceFilterPopUpXpath = "//div[@data-testid='refinement-row-active-popover']";
 	public static String sliderDivXpath = "//div[@data-testid='price-slider']";
 	public static String priceLeftSliderXpath = "//div[@role='slider' and @data-testid='slider-handle-min']";
@@ -32,8 +32,8 @@ public class SearchPage extends BasePage {
 	public static String maxPriceXpath = "//div//input[@type='number' and @data-testid='price-filter-value-max']/following-sibling::span";
 	public static String priceResultMainXpath = "//div[@data-testid='clickout-area']//div[@data-testid='recommended-price' and @itemprop='price']";
 	
-	public static String resetButtonXpath = "//button[text()='Reset' and @data-testid='filters-popover-reset-button']";
-	public static String priceFilterApplyButtonXpath = "//button[text()='Apply' and @data-testid='filters-popover-apply-button']";
+	public static String resetButtonXpath = "//button[@data-testid='filters-popover-reset-button']";
+	public static String priceFilterApplyButtonXpath = "//button[@data-testid='filters-popover-apply-button']";
 	
 	@Override
 	public void setupWebpage() {
@@ -232,17 +232,17 @@ public class SearchPage extends BasePage {
 	public static boolean waitPageLoad(WebDriver driver,int s) {
 		
 		try {
-			String searchButtonXpath = "//button//span[contains(text(),'Search')]";
+			//String searchButtonXpath = "//button//span[contains(text(),'Search')]";
 			
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(s));
-			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(searchButtonXpath)));
+			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(filtersRowXpath)));
 			
 			if(element == null) {
-				LogError("Search button did not show %d seconds after search".formatted(s));
+				LogError("Filters row did not show %d seconds after search".formatted(s));
 				return false;
 			}
 			
-			String imagesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//button/img";
+			String imagesResultListXpath = "//img[@data-testid='accommodation-main-image']";
 			
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(s));
 			List<WebElement> elements = wait2.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(imagesResultListXpath)));
@@ -253,7 +253,7 @@ public class SearchPage extends BasePage {
 				return false;
 			}
 			
-			String titlesResultListXpath = "//div[@data-testid='result-list-ready']//ol//li//div//section[contains(@data-testid,'item-name-section')]//span[@title]";
+			String titlesResultListXpath = "//section[@data-testid='item-name-section']";
 			
 			WebDriverWait wait2b = new WebDriverWait(driver, Duration.ofSeconds(s));
 			List<WebElement> elements3 = wait2b.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(titlesResultListXpath)));

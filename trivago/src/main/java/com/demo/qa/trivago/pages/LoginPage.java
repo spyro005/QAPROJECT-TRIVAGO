@@ -26,11 +26,13 @@ public class LoginPage {
 	
 	static String passwordLoginURL = "https://auth.trivago.com/en-US/login";
 	
-	static String emailInputXpath = "//input[@name='email']";
+	static String emailInputXpath = "//input[@id='email']";
 	
-	static String passwordInputXpath = "//input[@name='password']";
+	static String passwordInputXpath = "//input[@id='password']";
 	
 	static String continueButtonXpath = "//button[@type='submit' and contains(text(),'Continue')]";
+	
+	static String continueEmailButtonXpath = "//button[@type='submit']/span[contains(text(),'Continue')]";
 	
 	static String loginButtonXpath = "//button[@type='submit' and contains(text(),'Log in')]";
 	
@@ -43,7 +45,7 @@ public class LoginPage {
 			
 			emailBox.sendKeys(email);
 			
-			boolean clickedContinue = BasePage.clickElement(driver, By.xpath(continueButtonXpath), 2000);
+			boolean clickedContinue = BasePage.clickElement(driver, By.xpath(continueEmailButtonXpath), 2000);
 			BaseClass.LogDebugMessage("Clicked continue box: %b \n with xpath %s".formatted(clickedContinue,continueButtonXpath));
 			
 			boolean wpp = waitPPageLoad(driver,5);
@@ -56,10 +58,10 @@ public class LoginPage {
 			
 			pwdBox.sendKeys(password);
 			
-			boolean clickedLogin = BasePage.clickElement(driver, By.xpath(loginButtonXpath), 2000);
-			BaseClass.LogDebugMessage("Clicked password box: %b \n with xpath %s".formatted(clickedLogin, loginButtonXpath));
+			boolean clickedCont = BasePage.clickElement(driver, By.xpath(continueButtonXpath), 2000);
+			BaseClass.LogDebugMessage("Clicked continue box: %b \n with xpath %s".formatted(clickedCont, continueButtonXpath));
 			
-			return clickedLogin;
+			return clickedCont;
 		}catch(Exception e) {
 			BaseClass.LogError("Exception while attempting to login:\n %s".formatted(e.getMessage()));
 			return false;
